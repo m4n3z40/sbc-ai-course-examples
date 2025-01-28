@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conway's Game of Life</title>
+</head>
+<body>
+    <canvas id="gameCanvas" width="500" height="500"></canvas>
+
+    <script>
+        function init() {
+                // Criar grid
+            const rows = 50;
+            const cols = 50;
+            let grid = Array(rows).fill().map(() => Array(cols).fill(0));
+
+            // Função para criar grid inicial aleatório
+            function initializeGrid() {
+                for(let i = 0; i < rows; i++) {
+                    for(let j = 0; j < cols; j++) {
+                        grid[i][j] = Math.random() > 0.5 ? 1 : 0;
+                    }
+                }
+            }
+
+            // Função para calcular próxima geração
+            function nextGeneration() {
+                let newGrid = Array(rows).fill().map(() => Array(cols).fill(0));
+                
+                for(let i = 0; i < rows; i++) {
+                    for(let j = 0; j < cols; j++) {
+                        let neighbors = countNeighbors(i, j);
+                        
+                        if(grid[i][j] === 1) {
+                            newGrid[i][j] = (neighbors === 2 || neighbors === 3) ? 1 : 0;
+                        } else {
+                            newGrid[i][j] = (neighbors === 3) ? 1 : 0;
+                        }
+                    }
+                }
+                
+                grid = newGrid;
+            }
+
+            // Função para contar vizinhos vivos
+            function countNeighbors(x, y) {
+                let count = 0;
+                for(let i = -1; i <= 1; i++) {
+                    for(let j = -1; j <= 1; j++) {
+                        if(i === 0 && j === 0) continue;
+                        let row = (x + i + rows) % rows;
+                        let col = (y + j + cols) % cols;
+                        count += grid[row][col];
+                    }
+                }
+                return count;
+            }
+
+            // Renderizar no canvas
+            function draw() {
+                const canvas = document.getElementById('gameCanvas');
+                const ctx = canvas.getContext('2d');
+                const cellSize = 10;
+                
+                ctx.clearRect(0, 0, canvas.width, canvas.height);
+                
+                for(let i = 0; i < rows; i++) {
+                    for(let j = 0; j < cols; j++) {
+                        if(grid[i][j] === 1) {
+                            ctx.fillStyle = 'black';
+                            ctx.fillRect(j * cellSize, i * cellSize, cellSize - 1, cellSize - 1);
+                        }
+                    }
+                }
+            }
+
+            // Loop principal
+            function gameLoop() {
+                nextGeneration();
+                draw();
+                setTimeout(gameLoop, 100);
+            }
+
+            // Iniciar jogo
+            initializeGrid();
+            gameLoop();
+        }
+
+        document.addEventListener('DOMContentLoaded', init);
+    </script>
+</body>
+</html>

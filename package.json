@@ -1,0 +1,24 @@
+{
+  "name": "sbc-ai-course-examples",
+  "version": "0.0.1",
+  "description": "AI Examples for the Tech for PMs course",
+  "main": "index.js",
+  "scripts": {
+    "game-of-life": "open ./game-of-life/index.html",
+    "simple-neural-network": "node ./simple-neural-network/train-and-run.mjs",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "ai",
+    "sbc",
+    "ml",
+    "dl",
+    "neural",
+    "networks",
+    "game",
+    "of",
+    "life"
+  ],
+  "author": "Allan Baptista (allan.marques@ymail.com)",
+  "license": "MIT"
+}
