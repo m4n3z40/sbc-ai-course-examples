@@ -6,6 +6,7 @@
   "scripts": {
     "game-of-life": "open ./game-of-life/index.html",
     "simple-neural-network": "node ./simple-neural-network/train-and-run.mjs",
+    "simple-rag": "node --env-file=.env ./simple-rag/rag.mjs",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
@@ -20,5 +21,11 @@
     "life"
   ],
   "author": "Allan Baptista (allan@beanimus.com)",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "@langchain/community": "^0.3.27",
+    "@langchain/openai": "^0.4.2",
+    "langchain": "^0.3.14",
+    "pdf-parse": "^1.1.1"
+  }
 }
