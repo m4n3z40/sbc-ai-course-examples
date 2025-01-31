@@ -7,6 +7,8 @@ Este repositório contém exemplos de código e materiais de apoio para o curso 
 - `game-of-life/`: Implementacao do jogo da Vida de Conway
 - `simple-neural-network/`: Implementacao de uma rede neural simples
 - `simple-rag/`: Implementacao simples de um RAG
+- `simple-nldq/`: Roda um pipeline simples que tranforma uma pergunta em uma query SQL
+- `simple-nldq-agent`: Um agente robusto que transforma uma pergunta em uma query SQL
 
 ## Pré-requisitos
 

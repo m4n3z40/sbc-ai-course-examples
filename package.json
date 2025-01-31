@@ -7,6 +7,8 @@
     "game-of-life": "open ./game-of-life/index.html",
     "simple-neural-network": "node ./simple-neural-network/train-and-run.mjs",
     "simple-rag": "node --env-file=.env ./simple-rag/rag.mjs",
+    "simple-nldq": "node --env-file=.env ./simple-nldq/natural-lang-db-query.mjs",
+    "simple-nldq-agent": "node --env-file=.env ./simple-nldq/db-helper-agent.mjs",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
@@ -24,8 +26,13 @@
   "license": "MIT",
   "dependencies": {
     "@langchain/community": "^0.3.27",
+    "@langchain/core": "^0.3.37",
+    "@langchain/langgraph": "^0.2.44",
     "@langchain/openai": "^0.4.2",
     "langchain": "^0.3.14",
-    "pdf-parse": "^1.1.1"
+    "pdf-parse": "^1.1.1",
+    "sqlite3": "^5.1.7",
+    "typeorm": "^0.3.20",
+    "zod": "^3.24.1"
   }
 }
