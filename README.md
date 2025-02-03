@@ -2,13 +2,14 @@
 
 Este repositório contém exemplos de código e materiais de apoio para o curso de Inteligência Artificial (Tech for PMs) da SBC.
 
-## Estrutura do Repositório
+## Projetos
 
-- `game-of-life/`: Implementacao do jogo da Vida de Conway
-- `simple-neural-network/`: Implementacao de uma rede neural simples
-- `simple-rag/`: Implementacao simples de um RAG
-- `simple-nldq/`: Roda um pipeline simples que tranforma uma pergunta em uma query SQL
+- `game-of-life`: Implementacao do jogo da Vida de Conway
+- `simple-neural-network`: Implementacao de uma rede neural simples
+- `simple-rag`: Implementacao simples de um RAG
+- `simple-nldq`: Roda um pipeline simples que tranforma uma pergunta em uma query SQL
 - `simple-nldq-agent`: Um agente robusto que transforma uma pergunta em uma query SQL
+- `summarize-text`: Sumariza textos em páginas HTML
 
 ## Pré-requisitos
 

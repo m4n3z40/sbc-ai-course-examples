@@ -9,6 +9,7 @@
     "simple-rag": "node --env-file=.env ./simple-rag/rag.mjs",
     "simple-nldq": "node --env-file=.env ./simple-nldq/natural-lang-db-query.mjs",
     "simple-nldq-agent": "node --env-file=.env ./simple-nldq/db-helper-agent.mjs",
+    "summarize-text": "node --env-file=.env ./summarize-text/summarize.mjs",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
@@ -29,6 +30,8 @@
     "@langchain/core": "^0.3.37",
     "@langchain/langgraph": "^0.2.44",
     "@langchain/openai": "^0.4.2",
+    "cheerio": "^1.0.0",
+    "html-to-text": "^9.0.5",
     "langchain": "^0.3.14",
     "pdf-parse": "^1.1.1",
     "sqlite3": "^5.1.7",
