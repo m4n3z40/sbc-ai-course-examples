@@ -63,3 +63,6 @@ $RECYCLE.BIN/
 
 # Linux
 *~
+
+# Generated files
+simple-neural-network/sales-data.csv

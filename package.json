@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "game-of-life": "open ./game-of-life/index.html",
-    "simple-neural-network": "node ./simple-neural-network/train-and-run.mjs",
+    "generate-sales-data": "node --env-file=.env ./simple-neural-network/generate-sales-data.mjs",
+    "simple-neural-network": "node --env-file=.env ./simple-neural-network/train-and-run.mjs",
     "simple-rag": "node --env-file=.env ./simple-rag/rag.mjs",
     "simple-nldq": "node --env-file=.env ./simple-nldq/natural-lang-db-query.mjs",
     "simple-nldq-agent": "node --env-file=.env ./simple-nldq/db-helper-agent.mjs",
@@ -31,6 +32,7 @@
     "@langchain/langgraph": "^0.2.44",
     "@langchain/openai": "^0.4.2",
     "cheerio": "^1.0.0",
+    "csv-parse": "^5.6.0",
     "html-to-text": "^9.0.5",
     "langchain": "^0.3.14",
     "pdf-parse": "^1.1.1",
