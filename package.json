@@ -11,6 +11,7 @@
     "simple-nldq": "node --env-file=.env ./simple-nldq/natural-lang-db-query.mjs",
     "simple-nldq-agent": "node --env-file=.env ./simple-nldq/db-helper-agent.mjs",
     "summarize-text": "node --env-file=.env ./summarize-text/summarize.mjs",
+    "mcp-server": "node --env-file=.env ./mcp-server-example/mcp-server.mjs",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
@@ -31,6 +32,7 @@
     "@langchain/core": "^0.3.37",
     "@langchain/langgraph": "^0.2.44",
     "@langchain/openai": "^0.4.2",
+    "@modelcontextprotocol/sdk": "^1.6.0",
     "cheerio": "^1.0.0",
     "csv-parse": "^5.6.0",
     "html-to-text": "^9.0.5",
