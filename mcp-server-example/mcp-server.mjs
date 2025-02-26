@@ -191,3 +191,16 @@ main().catch((error) => {
   console.error("Fatal error in main():", error);
   process.exit(1);
 });
+
+
+// Adicionar em ~/Library/Application\ Support/Claude/claude_desktop_config.jso 
+// {
+//     "mcpServers": {
+//         "weather": {
+//             "command": "node",
+//             "args": [
+//                 "/Users/meucomputador/dev/sbc-ai-course-examples/mcp-server-example/mcp-server.mjs"
+//             ]
+//         }
+//     }
+// }
