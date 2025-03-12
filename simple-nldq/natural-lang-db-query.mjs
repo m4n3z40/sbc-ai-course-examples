@@ -68,10 +68,10 @@ const generateAnswer = async (state) => {
 
 const graphBuilder = new StateGraph({
     stateSchema: Annotation.Root({
-        question: Annotation,
-        query: Annotation,
-        result: Annotation,
-        answer: Annotation,
+        question: Annotation(),
+        query: Annotation(),
+        result: Annotation(),
+        answer: Annotation(),
     })
 })
     .addNode("writeQuery", writeQuery)
