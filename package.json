@@ -6,6 +6,7 @@
   "scripts": {
     "game-of-life": "open ./game-of-life/index.html",
     "generate-sales-data": "node --env-file=.env ./simple-neural-network/generate-sales-data.mjs",
+    "multi-agent-collab": "node --env-file=.env ./multi-agent-collab/mac.mjs",
     "simple-neural-network": "node --env-file=.env ./simple-neural-network/train-and-run.mjs",
     "simple-rag": "node --env-file=.env ./simple-rag/rag.mjs",
     "simple-nldq": "node --env-file=.env ./simple-nldq/natural-lang-db-query.mjs",
